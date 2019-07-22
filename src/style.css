@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -17,6 +18,8 @@
     width: 50%;
     justify-content: flex-end;
     align-items: center;
+    color:#484a4a;
+    font-size: medium;
 }
 
 
@@ -85,9 +88,9 @@ Tanto de hero como de laseccion conduce*/
     left:295px;
     display: flex;
     color: white;
+    box-sizing: border-box;
     
-    
-    
+  
 .padre6 p{
     
     display: table-cell;
@@ -186,6 +189,7 @@ Tanto de hero como de laseccion conduce*/
     bottom:0;
     right:0;
     left:100px; 
+    box-sizing: border-box;
 }
 .traza{
     display: flex;
@@ -197,6 +201,15 @@ Tanto de hero como de laseccion conduce*/
     margin: auto;
     padding: 0 0rem   
 }
+/* .mapa{
+    height: 50vh;
+    position: relative;
+    top: -183px;
+    bottom:0;
+    right:0;
+    left:300px; 
+    display: flex;
+} */
 
 
 /*Diseño y ubicacion de la seccion de footer para imagen y contenedor de texto*/
@@ -274,4 +287,59 @@ h3{
 }
 
 
-/*Centrando .tarifa*/
+/*Modal inicio de sesion*/
+#ventana{
+    position:fixed;
+    background: rgb(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1;
+    visibility:hidden;
+}
+#inicia-sesion{
+    background: #07cfb7;
+    width: 500px;
+    height: 400px;
+    top:50%;
+    left:50%;
+    position:absolute;
+    margin-top:-200px;
+    margin-left: -250px;
+    text-align:center;
+}
+/*Modal registro*/
+#registro{
+    background: #d7dfde;
+    width: 500px;
+    height: 400px;
+    top:50%;
+    left:50%;
+    position:absolute;
+    margin-top:-200px;
+    margin-left: -250px;
+    text-align:center;  
+}
+/*Modal conductor*/
+#conductor{
+    background: #d7dfde;
+    width: 600px;
+    height: 600px;
+    top:50%;
+    left:50%;
+    position:absolute;
+    margin-top:-300px;
+    margin-left: -300px;
+    text-align:center; 
+}
+#boton-registrate{
+    color: #3c3d3d;
+    border: #d7dfde;
+    background: white;
+}
+#boton-conduce{
+        color: white;
+        border: #f7b617;
+        background:#f7b617;
+}

@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="grid.css">
 </head>
+<STYLE>A {text-decoration: none;} </STYLE>
 <body>
     <div class="contenedor"> 
         <header class="nav-bar"> 
             <div class="logo"><img src="../imagenes/logo.png"></div>
             
             <nav class="nav">
-                <a><button>Viaja</button>  </a>
-                <a><button>Conduce</button> </a>
-                <a><button>Inicia Sesión</button> </a>
+                <a > Viaja </a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a > Conduce </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style=color:#484a4a; href="javascript:desplegar('visible')">Inicia Sesión </a>
             </nav>
         </header>  
         <main class="hero">
@@ -25,7 +26,7 @@
                     <h2>Disfruta del viaje
                             Eres dueño de tu tiempo</h2><br>
                     <h3>Viaja con <img src="../imagenes/logo-blanco.png"> </h3> 
-                    <p><button>REGÍSTRATE</button></p>
+                    <p><a id="boton-registrate" href="javascript:desplegar('visible')" >REGÍSTRATE</a></p>
                     <p>O BIEN</p>
                     <p><button>Conviértete en conductor</button></p>
                 </aside>
@@ -47,7 +48,7 @@
                 <aside class="aside-conduce">
                         <h3>Conduce cuando quieras</h3><br>
                         <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p><br>
-                        <p><button>Conviértete en conductor</button></p>
+                        <a id="boton-conduce" href="javascript:desplegar('visible')">Conviértete en conductor </a>
                 </aside>
             </div>    
         </article>
@@ -64,11 +65,9 @@
                     </section>
 
                 <section class="mapa">
-                    <!--investigar como colocar el mapa de google maps-->
+                    <!-- <img src="../imagenes/map.jpg" class="mapa"> -->
                 </section>
          </article>
-
-        
 
         <footer class="footer">
             <img src="../imagenes/logo-blanco.png"class="logo-blanco">
@@ -109,6 +108,70 @@
         </footer>
         
     </div>
+
+
+<div id="ventana">
+	<div id="inicia-sesion">
+         <a href="javascript:desplegar('hidden')">CERRAR</a> <br><br><br>
+		<img style="width:80px; height:100px" src="../imagenes/persona.jpg">
+		<p><input type="text" placeholder="Username"></p>
+		<p><input type="text" placeholder="Password"></p>
+        <p><button> LOGING </button></p>
+        <p>Forgot password?</p><a href="">Click Here</a>
+	</div>
+    <div id="registro">
+        <a href="javascript:desplegar('hidden')">CERRAR</a> <br><br><br>
+        <p><button>Ya tienes una cuenta?</button></p>
+        <p> O CREA UNA CUENTA </p>
+        <p><input type="text" placeholder="Nombre"><input type="text" placeholder="Apellido"></p>
+        <p><input type="text" placeholder="Correo Elektronico: ejemplo@correo.mx"></p>
+        <p><input type="text" placeholder="Telefono"></p>
+        <p><input type="text" placeholder="Contraseña"></p>
+        <p><input type="text" placeholder="Ciudad"></p>
+        <p><input type="text" placeholder="(Opcional)codigo de invitación"></p>
+        <p><select name="Como te ">Como te enteraste de nosotros? 
+            <option value="1">Como te enteraste de nosotros? </option>
+            <option value="2">Amigo </option>
+        </select></p>
+        <p><button>ENVIAR</button></p>
+    
+    </div>
+
+    <div id="conductor">
+    <a href="javascript:desplegar('hidden')">CERRAR</a> <br><br><br>
+        <p>¿Tienes vehiculo de 4 ruedas?</p>
+        <p><select name=" ">Si 
+                <option value="1">Si </option>
+                <option value="2">No </option>
+            </select></p> <br><br>
+        <p>Marca </p>
+        <p><select name="">
+                <option value="1">Elije la marca del vehiculo </option>
+                <option value="2">Honda </option>
+            </select></p>
+            <p>¿No ves tu vehiculo en la lista? Envía un correo electrónico a sociosmdv@uber.com </p>
+            <p>Modelo</p>
+            <p><select name=" ">
+                    <option value="1">Modelo 1 </option>
+                    <option value="2">Modelo 2 </option>
+                </select></p><br><br>
+            <p>Año</p>
+            <p><select name="">
+                    <option value="1">2017 </option>
+                    <option value="2">2018 </option>
+                </select></p><br><br>
+            <p>Número de la matrícula</p>
+            <p><input type="text" placeholder="Número de la matrícula"></p>
+            <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p><br>
+            <p><button>ENVIAR</button></p>
+
+    </div>
+
+</div>
+
+
+     <div class="modal-registrate"></div>
+      <div class="modal-conduce"></div>
     <script src="index.js"></script>
 </body>
 </html>
