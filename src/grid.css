@@ -1,0 +1,52 @@
+/*información de contenedor*/
+.contenedor{
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+    display: grid;
+    /* grid-gap: 20px; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: "nav-bar       nav-bar        nav-bar          nav-bar"
+                         "hero          hero           hero             hero"
+                         "informacion   informacion    informacion      informacion"
+                         "conduce       conduce        conduce          conduce"
+                         "tarifa        tarifa         tarifa           tarifa"
+                         "footer        footer         footer           footer"
+}
+
+/*Dando estilo y ubicacion a header junto con sus dos cajas .logo y .nav*/
+.contenedor .nav-bar{
+    background: white;
+    grid-area: nav-bar;
+    display: flex;
+    min-height: 100px;
+    flex-flow: row wrap;
+    flex-direction: row;
+}
+/* Estilo y hubicacion de la seccion .hero*/
+.contenedor  .hero{
+    grid-area: hero;
+    display: flex;   
+}
+
+/* Estilo y hubicacion de la seccion .informacion*/
+.contenedor  .informacion{
+    grid-area: informacion;
+    background: #f7b617;
+    height: 60vh;
+}
+/* Estilo y hubicacion de la seccion .conduce*/
+.contenedor  .conduce{
+    grid-area: conduce;
+}
+
+/* Estilo y hubicacion de la seccion .tarifa*/
+.contenedor  .tarifa{
+    grid-area: tarifa;
+    
+}
+/* Estilo y hubicacion de la seccion .footer*/
+.contenedor .footer{
+    grid-area: footer;
+}

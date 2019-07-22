@@ -1,0 +1,277 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Contenedores de nav-bar para estilos y ubicacion*/
+.contenedor .nav-bar .logo{
+    background: white;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contenedor .nav-bar .nav{
+    background: white;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Con esto ajustamos las imagenes como fondos para cada contenedor.
+Tanto de hero como de laseccion conduce*/
+.contenedor .hero{
+    background-image: url(../imagenes/taxi1.jpg);
+    background-attachment:scroll;
+    background-size: cover;
+    background-position: center ;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 80vh;
+    align-content: flex-end;
+    flex-flow: row wrap;
+    position: relative;
+
+}
+.contenedor .conduce{
+    background: url(../imagenes/conduce1.jpg);
+    background-attachment:scroll;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50vh;
+    position: relative;
+}
+
+
+/*Diseño de .aside-hero y .aside-conduce*/
+/* .contenedor .aside-hero{
+    background: #f7b617;
+    display: flex;
+    width: 400px;
+    height: 290px;
+    position: absolute;
+    top: 90px;
+    right: 0px; 
+    color: white; 
+    text-align: center; 
+    
+}
+.contenedor .aside-conduce{
+    background: rgb(0,0,0,0.5);
+    display: flex;
+    height: 50vh;
+    width: 330px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white; 
+} */
+
+/*Diseño y ubicacion de la seccion de informacion para imagen y contenedor de texto*/
+.padre6{
+    background: #f7b617;
+    display: table;
+    width: 410px;
+    height: 300px;
+    margin:2rem auto;
+    position: relative;
+    top: -100px;
+    bottom:0;
+    right:0;
+    left:295px;
+    display: flex;
+    color: white;
+    
+    
+    
+.padre6 p{
+    
+    display: table-cell;
+    margin: 0;
+    padding: 0 1rem;
+    vertical-align: middle;
+    color: white;
+    writing-mode: vertical-lr;
+    transform: rotate(270deg);
+    overflow-wrap: break-word;
+    
+}
+.padre6 h2 {
+    width: 100%;
+    font-size: medium;
+    margin: auto;
+    padding: 0 1rem;
+    vertical-align: text-top;
+    align-items: flex-start;  
+}
+}
+/*Diseño y ubicacion de la seccion de informacion para imagen y contenedor de texto*/
+
+.imagen-celular{
+    height: 40vh;
+    position: relative;
+    top: 60px;
+    bottom:0;
+    right:0;
+    left:85px;
+}
+.padre{
+    display: table;
+    width: 50px;
+    height: 100px;
+    margin:2rem auto;
+    width: 300px;
+    position: relative;
+    top: -220px;
+    bottom:0;
+    right:0;
+    left:45px;
+}
+.padre p{
+    display: table-cell;
+    margin: 0;
+    padding: 0 1rem;
+    vertical-align: middle;
+    color: white;
+}
+
+/*Diseño y ubicacion de la seccion de conduce para imagen y contenedor de texto*/
+.padre5{
+    background: rgb(0,0,0,0.5);
+    display: table;
+    width: 330px;
+    height: 50vh;
+    margin:2rem auto;
+    position: relative;
+    top: -30px;
+    bottom:0;
+    right:0;
+    left:335px;  
+}
+.padre5 p{
+    display: table-cell;
+    margin: 0;
+    padding: 0 1rem;
+    vertical-align: middle;
+    color: white;
+    /* writing-mode: vertical-lr;
+    transform: rotate(270deg);
+    text-align:left; */
+}
+.padre5 h3{
+    
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/*Diseño y ubicacion de la seccion de tarifa para imagen y contenedor de texto*/
+
+.info-tarifa{
+    background: #f7b617;
+    height: 65vh;
+    color: white; 
+}
+.padre1{
+    display: table;
+    width: 50px;
+    height: 300px;
+    /* margin:2rem auto; */
+    width: 300px;
+    position: relative;
+    top: 75px;
+    bottom:0;
+    right:0;
+    left:100px; 
+}
+.traza{
+    display: flex;
+   margin:0 4em;
+   
+}
+.padre1 h3{
+    text-align: left; 
+    margin: auto;
+    padding: 0 0rem   
+}
+
+
+/*Diseño y ubicacion de la seccion de footer para imagen y contenedor de texto*/
+.footer{
+    background: #2b2b2b ;
+    height: 70vh;
+}
+.logo-blanco{
+    height: 23px;
+    position: relative;
+    top: 60px;
+    bottom:0;
+    right:0;
+    left:85px;  
+}
+.padre3{
+    color: white;
+    font-size: x-small;
+    display: table;
+    height: 100px;
+    margin:2rem auto;
+    width: auto;
+    position: relative;
+    top: 60px;
+    bottom:0;
+    right:0;
+    left:-170px;    
+}
+.padre4{
+    color: white;
+    font-size: x-small;
+    display: table;
+    height: 100px;
+    margin:2rem auto;
+    width: auto;
+    position: relative;
+    top: -207px;
+    bottom:0;
+    right:0;
+    left:30px;   
+}
+.descargas{
+    position: relative;
+    top: -300px;
+    bottom:0;
+    right:0;
+    left:715px;    
+}
+.marca-registrada{
+    color: white;
+    font-size: x-small;
+    position: relative;
+    top: -270px;
+    bottom:0;
+    right:0;
+    left:85px; 
+}
+/*alineando taxto*/
+p{
+    text-align: left;
+    margin: auto;
+
+}
+h2{
+    text-align: left;
+   
+
+}
+h3{
+    text-align: left; 
+    margin: auto;
+    padding: 0 1rem;
+    color: white;
+    
+}
+
+
+/*Centrando .tarifa*/
